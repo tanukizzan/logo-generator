@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>あのロゴジェネレーター</title>
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://app.tanukizzan.com/logo-generator/" />
+  <meta property="og:title" content="あのロゴジェネレーター" />
+  <meta property="og:description" content="いろいろなブランドのロゴを再現できるサイトです。" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/dracula.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <h1>あのロゴジェネレーター</h1>
+    <p>このサイトはMacに付属するフォントを使用しているためMac専用です。Mac以外の端末ではデフォルトのセリフ体またはサンセリフ体で表示されます。またCSSボタンを押すと使用しているCSSコードが表示されます。ご自由にお使いください。</p>
+  </header>
+  <main>
+    <h2>Supreme風</h2>
+    <input type="text" value="Supreme" id="supreme">
+    <details>
+      <summary>CSS</summary>
+      <pre><code>#supreme {
+  font-family: futura, sans-serif;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 700;
+  padding: 0 15px 10px 15px;
+  letter-spacing: -3px;
+  background-color: #ED1C24;
+  color: #fff;
+}</code></pre>
+    </details>
+    <h2>LOUIS VUITTON風</h2>
+    <input type="text" value="LOUIS VUITTON" id="lv">
+    <details>
+      <summary>CSS</summary>
+      <pre><code>#lv {
+  font-family: futura, sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: -1px;
+  color: #000;
+}</code></pre>
+    </details>
+    <h2>GODIVA風</h2>
+    <input type="text" value="GODIVA" id="godiva">
+    <details>
+      <summary>CSS</summary>
+      <pre><code>#godiva {
+  font-family: optima, sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: #000;
+}</code></pre>
+    </details>
+    <h2>Panasonic風</h2>
+    <input type="text" value="Panasonic" id="panasonic">
+    <details>
+      <summary>CSS</summary>
+      <pre><code>#panasonic {
+  font-family: Helvetica, sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: -4px;
+  background-color: #fff;
+  color: #0f48a8;
+  transform: scale(1.1, 1);
+  transform-origin: top left;
+}</code></pre>
+    </details>
+    <h2>Francfranc風</h2>
+    <div id="francfranc">
+      <input type="text" value="Franc" class="ff-left">
+      <input type="text" value="franc" class="ff-right">
+    </div>
+    <details>
+      <summary>CSS</summary>
+      <pre><code>#francfranc {
+  display: flex;
+  width: 100%;
+}
+#francfranc .ff-left, #francfranc .ff-right {
+  font-family: Helvetica, sans-serif;
+  font-size: 3rem;
+  padding: 10px 0;
+  letter-spacing: 2px;
+  color: #000;
+}
+#francfranc .ff-left {
+  text-align: right;
+  font-weight: 400;
+}
+#francfranc .ff-right {
+  font-weight: 100;
+}</code></pre>
+    </details>
+    <h2>エヴァンゲリオン風</h2>
+    <input type="text" value="新世紀エヴァンゲリオン" id="eva">
+    <details>
+      <summary>CSS</summary>
+      <pre><code>#eva {
+  font-family: 'Hiragino Mincho ProN', serif;
+  font-size: 3rem;
+  font-weight: 900;
+  padding: 0 15px 10px 15px;
+  letter-spacing: -3px;
+  background-color: #000;
+  color: #fff;
+  transform: scale(1, 1.3);
+}</code></pre>
+    </details>
+  </main>
+  <footer>
+    <a href="https://app.tanukizzan.com/">&copy; 2021 Tanukizzan</a>
+    <a href="https://github.com/tanukizzan/logo-generator/">GitHub</a>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+
+</html>
