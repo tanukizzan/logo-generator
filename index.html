@@ -8,7 +8,7 @@
   <meta name="twitter:card" content="summary" />
   <meta property="og:url" content="https://app.tanukizzan.com/logo-generator/" />
   <meta property="og:title" content="あのロゴジェネレーター" />
-  <meta property="og:description" content="いろいろなブランドのロゴを再現できるサイトです。" />
+  <meta property="og:description" content="いろいろなブランドのロゴを再現できるサイトです。Mac専用です。" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/dracula.min.css">
   <link rel="stylesheet" href="./style.css">
 </head>
@@ -16,7 +16,7 @@
 <body>
   <header>
     <h1>あのロゴジェネレーター</h1>
-    <p>このサイトはMacに付属するフォントを使用しているためMac専用です。Mac以外の端末ではデフォルトのセリフ体またはサンセリフ体で表示されます。またCSSボタンを押すと使用しているCSSコードが表示されます。ご自由にお使いください。</p>
+    <p>このサイトはMacに付属するフォントを使用しているため<b>Mac専用</b>です。Mac以外の端末では正しく表示されません。またCSSボタンを押すと使用しているCSSコードが表示されます。ご自由にお使いください。</p>
   </header>
   <main>
     <h2>Supreme風</h2>
@@ -80,7 +80,8 @@
     </div>
     <details>
       <summary>CSS</summary>
-      <pre><code>#francfranc {
+      <pre><code>/* Francfrancは太字(.ff-left)と細字(.ff-right)を分けて表示しています。 */
+#francfranc {
   display: flex;
   width: 100%;
 }

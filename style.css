@@ -1,6 +1,6 @@
 html {
   font-size: 20px;
-  font-family: sans-serif;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 
 body {
@@ -24,10 +24,7 @@ h1 {margin: 2rem auto;}
 h2 {margin-top: 2rem;}
 
 details {margin: 1rem auto;}
-details summary {
-  outline: none;
-  cursor: pointer;
-}
+details summary {cursor: pointer;}
 details summary:hover {opacity: 0.5;}
 
 pre {
@@ -40,6 +37,8 @@ code {
   font-size: 0.8rem;
   line-height: 1.2rem;
 }
+
+.hljs {padding: 1rem;}
 
 input[type="text"] {
   width: 100%;
@@ -97,7 +96,6 @@ input:hover, input:focus {
   display: flex;
   width: 100%;
 }
-
 #francfranc .ff-left, #francfranc .ff-right {
   font-family: Helvetica, sans-serif;
   font-size: 3rem;
